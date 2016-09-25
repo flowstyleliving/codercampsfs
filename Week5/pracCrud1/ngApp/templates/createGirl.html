@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Add Girl</h1>
+
+  <div class="container-fluid">
+    <div class="well">
+      <form ng-submit="vm.create()">
+        <p>
+          Name:
+          <br>
+          <input ng-model="vm.girl.name" type="text" placeholder="Girl's name">
+        </p>
+        <p>
+          Age:
+          <br>
+          <input ng-model="vm.girl.age" type="number" placeholder="25">
+        </p>
+        <p>
+          Ethnicity:
+          <br>
+          <input ng-model="vm.girl.ethncity" type="text" placeholder="Girl's ethnicity">
+        </p>
+        <p>
+          Attraction:
+          <br>
+          <input ng-model="vm.girl.attraction" type="number" placeholder="7">
+        </p>
+        <p>
+          Aligned:
+          <br>
+          <input ng-model="vm.girl.aligned" type="checkbox" value="true">
+        </p>
+        <br>
+        <input class="btn-lg" type="submit">
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

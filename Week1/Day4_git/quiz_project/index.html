@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Quizzzz</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/sandstone/bootstrap.min.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1 class="display-3" style="text-align:center; color: white; padding-top: 20px; padding-left: 15px;">Quiz_Project</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <form onsubmit="score(event)">
+        <div id="div1" class="col-md-8">
+          <p id="q1">
+            1) What is Life most like?
+          </p>
+          <input type="radio" name="qA1" value="false"> A box of chocolates
+          <br>
+          <input type="radio" name="qA1" value="false"> Cogs in a giant machine
+          <br>
+          <input type="radio" name="qA1" value="true"> A Dream
+          <br>
+          <input type="radio" name="qA1" value="false"> A bag of chips
+          <br>
+        </div>
+        <br>
+        <div class="col-md-8">
+          <p id="q2">
+            2) Where do we go when we die?
+          </p>
+          <input type="radio" name="qA2" value="false"> Neverland Ranch w/ MJ reincarnated as a robot
+          <br>
+          <input type="radio" name="qA2" value="false"> A physical paradise of pizza trees and waterfalls of beer
+          <br>
+          <input type="radio" name="qA2" value="false"> Heaven or Hell
+          <br>
+          <input type="radio" name="qA2" value="true"> Back Home~
+          <br>
+        </div>
+        <br>
+        <div class="col-md-8">
+          <p id="q3">
+            3) Which is one reason we are NOT here?
+          </p>
+          <input type="radio" name="qA3" value="false"> To learn
+          <br>
+          <input type="radio" name="qA3" value="false"> To attain our own enlightenment
+          <br>
+          <input type="radio" name="qA3" value="true"> To complain about how life is unfair
+          <br>
+          <input type="radio" name="qA3" value="false"> To interact and create connections
+          <br>
+        </div>
+        <br>
+        <div class="col-md-8">
+          <p id="q4">
+            4)
+            <input type="radio" id="btnT" name="qA4" value="true" />
+            <label for="btnT">T</label> OR
+            <input type="radio" name="qA4" value="false">
+            <label for="btnT">F</label>
+          </button> : Are all these the same thing?
+          </p>
+          <ul>
+            <li>Nature</li>
+            <li>Allah</li>
+            <li>Jesus</li>
+            <li>The Flow</li>
+            <li>God</li>
+          </ul>
+        </div>
+        <br>
+        <div class="col-md-8">
+          <p id="q5">
+            5) What is NOT an efficient way to attain Enlightenment?
+          </p>
+          <input type="radio" name="qA5" value="false"> Creating Art
+          <br>
+          <input type="radio" name="qA5" value="false"> Meditation
+          <br>
+          <input type="radio" name="qA5" value="true"> Watching TV 3 hours a day
+          <br>
+          <input type="radio" name="qA5" value="false"> Cultivating compassion
+          <br>
+          <!-- <select name="qA5" class="form-control" id="sel1">
+            <option value="false">Creating Art</option>
+            <option value="false">Meditation</option>
+            <option value="true">Watching TV 3 hours a day</option>
+            <option value="false">Cultivating compassion</option>
+          </select> -->
+        </div>
+    </div>
+  </div>
+  <div style="padding-top: 5em;">
+    <input style="margin-left: 5em;" type="submit" value="Submit">
+  </div>
+
+  </form>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+<footer>
+  <p style="padding-top: 5em; padding-left: 1em;">
+    Created by Flowstyleliving™
+  </p>
+</footer>
+
+</html>

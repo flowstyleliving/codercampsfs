@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>app</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body ng-controller="HomeController as vm"> //as is the keyboard
+    <div style="text-algin: center">
+  <h3>{{vm.title}}</h3>
+</div>
+
+      <form class="well container from form-inline" ng-submit="vm.createContact()">
+        <input type="text" ng-model="vm.contact.name" class="form-control" />
+        <input type="email" ng-model="vm.contact.email" class="form-control" />
+        <input type="text" ng-model="vm.contact.phoneNumber" class="form-control" />
+      <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+
+    <div class="container">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Buttons</th>
+      </tr>
+      </thead>
+      <tbody>
+        //ng-repeast with "_ in _____" is similar to the forOf loop in typescript
+        <tr ng-repeat="c in vm.contacts">
+          <td>{{ c.name }}</td>
+          <td>{{ c.email }}</td>
+          <td>{{ c.phoneNumber }}</td>
+          <td><button type="button" class="btn btn-danger" ng-click="vm.deleteContact(c)">Delete</button></td>
+
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+  </body>
+</html>

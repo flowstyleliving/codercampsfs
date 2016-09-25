@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hangman</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div id="randomWord" class="hcenter" style="width: 80%; height: 15%; margin: auto;">
+      <!-- word goes here -->
+    </div>
+    <form id="letterGuessForm">
+      <input type="text" id="letterGuess" />
+      <button type="submit">Submit</button>
+    </form>
+    <br>
+    <div>
+      <div>
+        <span>Guessed: [ </span> <span id="guessedLetters"></span><span> ] </span>
+      </div>
+      <br>
+      <div>
+        <span>Wrong Guesses: [ </span> <span id="wrongGuessedLetters"></span><span> ] </span>
+      </div>
+      <br>
+      <div>
+        <span>Strikes: <span id="strikes"></span></span>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

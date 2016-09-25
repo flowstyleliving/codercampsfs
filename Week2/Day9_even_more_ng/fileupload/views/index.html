@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <title>file-upload</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/site.css"/>
+  <style>
+     .angular-google-map-container {
+         height: 500px;
+         width: 1000px;
+         border: 1px solid black;
+     }
+  </style>
+</head>
+
+<body ng-controller="MapsController as controller">
+  <div>
+    <a ui-sref="Home">Home</a>
+  </div>
+
+  <ui-view></ui-view>
+
+  <script src="/scripts/angular/angular.min.js"></script>
+  <script src="/scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/scripts/angular-resource/angular-resource.min.js"></script>
+  <script src="/scripts/angular-animate/angular-animate.min.js"></script>
+  <script src="/scripts/angular-touch/angular-touch.min.js"></script>
+  <script src="/scripts/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="/scripts/lodash/dist/lodash.min.js"></script>
+  <script src="/scripts/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+  <script src="/scripts/angular-google-maps/dist/angular-google-maps.min.js"></script>
+  <script src="/scripts/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+  <script src="/scripts/jquery/dist/jquery.min.js"></script>
+  <script src="/scripts/filepicker-js-bower/filepicker.min.js"></script>
+  <script src="/js/angular_filepicker.js"></script>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/services.js"></script>
+  <script src="/js/controllers.js"></script>
+  <script src="/js/MapsController.js"></script>
+
+</body>
+
+</html>

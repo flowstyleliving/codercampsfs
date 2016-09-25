@@ -1,0 +1,33 @@
+<div style="text-align: center;">
+  <h1>Add Guest</h1>
+</div>
+
+<form class="well container" name="createGuestsForm" ng-submit="vm.guestAdd()">
+  <div class="row container">
+    <div class="col col-sm-1">
+      <label>Author: </label>
+    </div>
+    <div class="col col-sm-6">
+      <input type="text" name="author" ng-model="vm.guest.author" class="form-control" required/>
+      <div ng-messages='createGuestsForm.author.$error' role='alert' style='color: #df691a;'>
+        <div ng-message='required'>* this input is required</div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row container">
+    <div class="col col-sm-1">
+      <label>Message: </label>
+    </div>
+    <div class="col col-sm-6">
+      <textarea ng-model="vm.guest.message" name="message" class="form-control" required/></textarea>
+      <div ng-messages='createGuestsForm.message.$error' role='alert' style='color: #df691a;'>
+        <div ng-message='required'>* this input is required</div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="text-align: center;">
+    <button type="submit" class="btn btn-success" ng-disabled="createGuestsForm.$invalid">Submit</button>
+  </div>
+</form>

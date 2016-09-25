@@ -1,0 +1,48 @@
+//BASIC DATA STRUCTURES//
+
+[]: indexed
+{}: !indexed
+node = referencing Obj's
+
+//Arrays//
+C# partitions memory
+JS doesn't care;
+JS stores arrs differently by dataType
+//do not mix dataTypes!
+//numbers are the fastest to store
+Pros: arr = fixed amount of data in a order// you want to read and write from it
+Cons: Add more info to the list
+
+//linked lists//
+Head -> B -> C-> Tail
+{prev: null, next: b} {prev: a, next: c/e} {n: d} {n: null}
+var x = head;
+
+->E
+Pros: Adding something to the middle/reordering. and then display- good.
+Cons: Finding specific info is difficult + time
+
+the tortoise(1 step) and the hare(2 steps)
+>takes 2 cycles to catch a loop
+
+//Binary Trees//
+Start with 1, can point up to no more than 2 nodes.
+Pros: It can be very very very fast to search/add for something
+Cons: Structure can be hinderance over time. "Sorting"
+
+//Self-balancing Binary Tree
+prob a library for it already online
+
+//Dictionary//
+: set of key value pairs
+.length
+.add('','')
+.remove('')
+.find('')
+Pros: Just objects, fast to read/write
+Cons: Slow to look for a Value if you don't know the Key. It's unordered
+
+//Hash Table//
+"jJXIdi": value
+Pros: like dictionaries
+Cons: confusing with how it's maintained
